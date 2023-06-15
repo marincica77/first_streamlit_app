@@ -19,6 +19,10 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 st.dataframe(fruits_to_show)
 
 st.header('Fruityvice Fruit Advice!')
-fruityvice_response = rq.get("https://fruityvice.com/api/fruit/watermelon")
-st.text(fruityvice_response.json())
+fruityvice_response = rq.get("https://fruityvice.com/api/fruit/"+"kiwi")
+
+# normalizes json data 
+fruityvice_normalized = pd.json_normalize(fruityvice_response.json())
+# shows as table
+st.dataframe(fruityvice_normalized)
 
