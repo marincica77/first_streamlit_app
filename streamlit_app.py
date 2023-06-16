@@ -36,7 +36,7 @@ try:
 except URLError as e:
   st.error()
 
-st.stop()
+#st.stop()
 
 st.header("The fruit load list contains:")
 def get_fruit_load_list():
