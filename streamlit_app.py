@@ -52,4 +52,4 @@ if st.button('Get fruit load list'):
 add_fruit = st.text_input('What fruit would you like to add?','jackfruit')
 st.write('Thanks for adding ', add_fruit)
 
-my_cur.execute("insert into PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST values ('from streamlit')")
+#my_cur.execute("insert into PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST values ('from streamlit')")
